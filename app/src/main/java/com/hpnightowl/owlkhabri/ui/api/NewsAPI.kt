@@ -1,6 +1,6 @@
 package com.hpnightowl.owlkhabri.ui.api
 import com.hpnightowl.owlkhabri.BuildConfig
-import com.hpnightowl.owlkhabri.ui.NewsResponse
+import com.hpnightowl.owlkhabri.ui.models.NewsResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

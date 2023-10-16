@@ -1,4 +1,4 @@
-package com.hpnightowl.owlkhabri.ui
+package com.hpnightowl.owlkhabri.ui.models
 
 data class Source(
     val id: String,

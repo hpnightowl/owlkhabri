@@ -1,4 +1,6 @@
-package com.hpnightowl.owlkhabri.ui
+package com.hpnightowl.owlkhabri.ui.models
+
+import com.hpnightowl.owlkhabri.ui.models.Article
 
 data class NewsResponse(
     val articles: List<Article>,
