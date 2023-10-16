@@ -6,6 +6,7 @@ plugins {
 android {
     namespace 'com.hpnightowl.owlkhabri'
     compileSdk 34
+    android.buildFeatures.buildConfig true
 
     defaultConfig {
         applicationId "com.hpnightowl.owlkhabri"
@@ -13,7 +14,7 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
-
+        buildConfigField("String","KHABRI_API_KEY","${KHABRI_API_KEY}")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -47,4 +48,8 @@ dependencies {
     // Navigation Components
     implementation "androidx.navigation:navigation-fragment-ktx:2.7.4"
     implementation "androidx.navigation:navigation-ui-ktx:2.7.4"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.10.0"
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 }
