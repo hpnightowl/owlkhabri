@@ -25,4 +25,14 @@ interface NewsAPI {
         apikey: String = BuildConfig.KHABRI_API_KEY
     ): Response<NewsResponse>
 
+    @GET("v2/everything")
+    suspend fun financeNews(
+        @Query("q")
+        searchQuery: String = "finance",
+        @Query("page")
+        pageNumber: Int = 1,
+        @Query("apikey")
+        apikey: String = BuildConfig.KHABRI_API_KEY
+    ): Response<NewsResponse>
+
 }

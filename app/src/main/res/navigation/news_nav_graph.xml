@@ -25,11 +25,27 @@
             app:destination="@id/articleNewsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/searchNewsFragment"
-        android:name="com.hpnightowl.owlkhabri.ui.fragments.SearchNewsFragment"
-        android:label="SearchNewsFragment" >
+        android:id="@+id/financeNewsFragment"
+        android:name="com.hpnightowl.owlkhabri.ui.fragments.FinanceNewsFragment"
+        android:label="FinanceNewsFragment" >
         <action
-            android:id="@+id/action_searchNewsFragment_to_articleNewsFragment"
+            android:id="@+id/action_financeNewsFragment_to_articleNewsFragment"
+            app:destination="@id/articleNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/politicalNewsFragment"
+        android:name="com.hpnightowl.owlkhabri.ui.fragments.PoliticalNewsFragment"
+        android:label="PoliticalNewsFragment" >
+        <action
+            android:id="@+id/action_politicalNewsFragment_to_articleNewsFragment"
+            app:destination="@id/articleNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportsNewsFragment"
+        android:name="com.hpnightowl.owlkhabri.ui.fragments.SportsNewsFragment"
+        android:label="SportsNewsFragment" >
+        <action
+            android:id="@+id/action_sportsNewsFragment_to_articleNewsFragment"
             app:destination="@id/articleNewsFragment" />
     </fragment>
 </navigation>

@@ -24,7 +24,7 @@ class Adapter: RecyclerView.Adapter<Adapter.ArticleViewHolder>(){
         }
     }
 
-    val differ = AsyncListDiffer(this, differCAllback)
+    private val differ = AsyncListDiffer(this, differCAllback)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         return ArticleViewHolder(LayoutInflater.from(parent.context).inflate(
             R.layout.item_article_preview,
