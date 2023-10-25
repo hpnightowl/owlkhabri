@@ -3,16 +3,15 @@
 
     <item android:id="@+id/breakingNewsFragment"
         android:title="Breaking"
-        android:titleCondensed="Hello"
         android:icon="@drawable/baseline_newspaper_24" />
 
     <item android:id="@+id/financeNewsFragment"
         android:title="Finance"
-        android:icon="@drawable/baseline_attach_money_24" />
+        android:icon="@drawable/ic_rupees" />
 
     <item android:id="@+id/politicalNewsFragment"
         android:title="Political"
-        android:icon="@drawable/baseline_search_24" />
+        android:icon="@drawable/ic_political" />
 
     <item android:id="@+id/sportsNewsFragment"
         android:title="Sports"
@@ -20,7 +19,7 @@
 
     <item android:id="@+id/savedNewsFragment"
         android:title="Saved"
-        android:icon="@drawable/baseline_favorite_24" />
+        android:icon="@drawable/baseline_bookmark_24" />
 
 
 </menu>
